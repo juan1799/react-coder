@@ -1,14 +1,13 @@
-import React from "react";
-import "./CartWidget.css";
+import React from 'react'
+
 const CartWidget = () => {
   return (
-    <>
-      <div>
-        <img src="./img/cart-icon.svg" alt="" className="cart-icon" />
-        <p>0</p>
-      </div>
-    </>
-  );
-};
+    <div className='cart-widget'>
+        <img src="./assets/img/cart-icon.svg" alt="" />
+        <p className='contador__cart-widget'>0</p>
+    </div>
 
-export default CartWidget;
+  )
+}
+
+export default CartWidget
