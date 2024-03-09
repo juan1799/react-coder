@@ -1,181 +1,82 @@
 [
     {
         "id": 1,
-        "titulo": "funko1",
-        "descripcion": "Aenean auctor gravida sem.",
+        "titulo": "Funko Ant man",
+        "descripcion": "Figura ant-man coleccionable",
         "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+        "imagen": "https://i.postimg.cc/pdDS5n8x/antman.png",
         "precio": 1500,
         "stock": 10
     },
     {
         "id": 2,
-        "titulo": "funko2",
-        "descripcion": "Nulla ut erat id mauris vulputate elementum.",
+        "titulo": "Funko Capitana Marvel",
+        "descripcion": "Figura Capitana Marvel",
         "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+        "imagen": "https://i.postimg.cc/VLy5wJ11/capitana-marvel.png",
         "precio": 1500,
         "stock": 10
     },
     {
         "id": 3,
-        "titulo": "llavero funko3",
-        "descripcion": "Aenean auctor gravida sem.",
-        "categoria": "llaveros",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
-        "precio": 1500,
+        "titulo": "Pin de boruto",
+        "descripcion": "Pin de boruto",
+        "categoria": "pines",
+        "imagen": "https://i.postimg.cc/8zgm3ksn/BNOPP0004-FUNKOBORUTOGLOWINTHEDARKPOPPIN0015-FRONT-WEB.png",
+        "precio": 1000,
         "stock": 10
     },
     {
         "id": 4,
-        "titulo": "remera funko4",
-        "descripcion": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+        "titulo": "Remera shigaraki",
+        "descripcion": "Remera de shigaraki con funko pop",
         "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
-        "precio": 1500,
+        "imagen": "https://i.postimg.cc/SsBZV69J/72704-SHIGARAKI-POP-and-TEE-WEB.png",
+        "precio": 3500,
         "stock": 10
     },
     {
         "id": 5,
-        "titulo": "funko5",
-        "descripcion": "Sed accumsan felis.",
+        "titulo": "Funko spiderman 2099",
+        "descripcion": "Figura spiderman 2099",
         "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
+        "imagen": "https://i.postimg.cc/yYrMW5xh/spiderman-2099.png",
         "precio": 1500,
         "stock": 10
     },
     {
         "id": 6,
-        "titulo": "remera funko6",
-        "descripcion": "In hac habitasse platea dictumst.",
+        "titulo": "Remera rengoku",
+        "descripcion": "Remera rengoku - demon slayer",
         "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
-        "precio": 1500,
+        "imagen": "https://i.postimg.cc/rwstNd8X/70364-RENGOKU-DS-TEE.png",
+        "precio": 1000,
         "stock": 10
     },
     {
         "id": 7,
-        "titulo": "funko7",
-        "descripcion": "Morbi vel lectus in quam fringilla rhoncus.",
-        "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
-        "precio": 1500,
+        "titulo": "Pin Loki",
+        "descripcion": "Pin coleccionable de loki",
+        "categoria": "pines",
+        "imagen": "https://i.postimg.cc/wMJdpQc8/MVPP0103-MARVELFUNKOPRESIDENTLOKIPOPPIN0025-FRONT-WEB.png",
+        "precio": 1000,
         "stock": 10
     },
     {
         "id": 8,
-        "titulo": " remera funko8",
-        "descripcion": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
+        "titulo": " Remera eren con funko",
+        "descripcion": "Remera Eren Yeager más funko",
         "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
-        "precio": 1500,
+        "imagen": "https://i.postimg.cc/76tL6925/69097-EREN-MARKS-POP-AND-TEE-WEB.png",
+        "precio": 3500,
         "stock": 10
     },
     {
         "id": 9,
-        "titulo": "funko9",
-        "descripcion": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
+        "titulo": "Funko Gwen Stacy",
+        "descripcion": "Figura Gwen Stacy coleccionable - spiderman",
         "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/ff4444/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 10,
-        "titulo": "remera funko10",
-        "descripcion": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-        "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 11,
-        "titulo": "remera funko11",
-        "descripcion": "Mauris sit amet eros.",
-        "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/ff4444/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 12,
-        "titulo": "llavero funko12",
-        "descripcion": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.",
-        "categoria": "llaveros",
-        "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 13,
-        "titulo": "llavero funko13",
-        "descripcion": "Aenean sit amet justo.",
-        "categoria": "llaveros",
-        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 14,
-        "titulo": "funko14",
-        "descripcion": "In blandit ultrices enim.",
-        "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 15,
-        "titulo": "remera funko15",
-        "descripcion": "Nullam varius.",
-        "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/ff4444/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 16,
-        "titulo": "remera funko16",
-        "descripcion": "Cras non velit nec nisi vulputate nonummy.",
-        "categoria": "remeras",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 17,
-        "titulo": "llavero funko17",
-        "descripcion": "Nulla tempus.",
-        "categoria": "llaveros",
-        "imagen": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 18,
-        "titulo": "llavero funko18",
-        "descripcion": "Etiam justo.",
-        "categoria": "llaveros",
-        "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 19,
-        "titulo": "funko19",
-        "descripcion": "Morbi non lectus.",
-        "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/cc0000/ffffff",
-        "precio": 1500,
-        "stock": 10
-    },
-    {
-        "id": 20,
-        "titulo": "funko20",
-        "descripcion": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
-        "categoria": "funkos",
-        "imagen": "http://dummyimage.com/200x100.png/dddddd/000000",
+        "imagen": "https://i.postimg.cc/R0HrfTy3/gwen-stacy.png",
         "precio": 1500,
         "stock": 10
     }
