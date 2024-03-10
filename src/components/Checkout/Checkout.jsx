@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext';
-import { useForm } from 'react-hook-form';
 import { collection, addDoc, updateDoc, doc, getDoc, getFirestore } from "firebase/firestore";
 import { db } from '../../firebase/config';
 
@@ -35,7 +34,7 @@ const Checkout = () => {
         const orden = {
             items: carrito.map((producto) => ({
                 id: producto.id,
-                nombre: producto.nombre,
+                titulo: producto.titulo,
                 cantidad: producto.cantidad
             })),
             total: precioTotal(),
@@ -46,6 +45,7 @@ const Checkout = () => {
             email
         }
 
+        console.log(orden)
          Promise.all(
             orden.items.map(async (productoOrden) => {
                 const productoRef = doc(db,"productos",productoOrden.id);
@@ -58,17 +58,34 @@ const Checkout = () => {
 
                 
             })
-        )
+        ) .then(() => {
+            addDoc(collection(db,"ordenes"),orden)
+            .then((docRef) => { 
+                setError("")
+                setOrdenId(docRef.id)
+                vaciarCarrito()
+            })
+            .catch((error) => {
+                console.log(error)
+                setError("Se produjo un error al crear la orden")
+            })
+
+        })
+        .catch((error) => {
+            console.log(error)
+            setError("No se puede actualizar el stock")
+        })
+        
         
     }
     
   return (
-    <div>
+    <div className='container'>
 
-    <h1>Ingresa tus datos</h1>
+    
 
     <form onSubmit={manejadorFormulario}>
-
+        <h2>Productos</h2>
         {carrito.map((producto) => (
 
             <div key={producto.id}>
@@ -85,34 +102,34 @@ const Checkout = () => {
             
         ))}
 
-        <div >
-
-            <div>
+        <div className='formulario'>
+            <h1>Ingresa tus datos</h1>
+            <div className='form-item'>
                 <label htmlFor="Nombre">Nombre</label>
                 <input name="Nombre" type='text' onChange={(e) => setNombre(e.target.value)}/>
             </div>
 
-            <div>
+            <div className='form-item'>
                 <label htmlFor="Apellido">Apellido</label>
                 <input name="Apellido" type='text' onChange={(e) => setApellido(e.target.value)}/>
             </div>
 
-            <div>
+            <div className='form-item'>
                 <label htmlFor="Nombre">Teléfono</label>
                 <input name="Teléfono" type='text' onChange={(e) => setTelefono(e.target.value)}/>
             </div>
 
-            <div>
+            <div className='form-item'>
                 <label htmlFor="Email">Email</label>
                 <input name="Email" type='email' onChange={(e) => setEmail(e.target.value)}/>
             </div>
 
-            <div>
+            <div className='form-item'>
                 <label htmlFor="EmailConfirmacion">Email Confirmacion</label>
                 <input name="EmailConfirmacion" type='email' onChange={(e) => setEmailConfirmacion(e.target.value)}/>
             </div>
 
-            <button type='submit'>Completar compra</button>
+            <button type='submit' className='btn-checkout'>Completar compra</button>
 
             {error && <p style={{color: "red"}}>{error}</p>}
 

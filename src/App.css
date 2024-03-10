@@ -199,29 +199,6 @@
   text-transform: capitalize;
 }
 
-/* .contador{
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.boton-contador{
-  padding-inline: 10px;
-  padding-block: 4px;
-} */
-
-.cart-widget{
-  display:inline-block;
-}
-
-.contador__cart-widget{
-  background-color: red;
-  border-radius: 100%;
-  text-align: center;
-  color: #efdaf9;
-
-}
 
 .item-carga, .error{
   height: 80vh;
@@ -270,3 +247,27 @@
   color: black;
 }
 
+.form-item{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  
+}
+
+.numerito{
+  background-color: white;
+  color: #424242;
+  width: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.cartwidget{
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-vacio{
+  height: 80vh
+}

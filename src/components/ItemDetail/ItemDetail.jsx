@@ -29,8 +29,11 @@ const ItemDetail = ({item}) => {
                     <p className="categoria">Categoría: {item.categoria}</p>
                     <p className='categoria'>Stock: {item.stock}</p>
                     <p className="precio">${item.precio}</p>
-                    <ItemCount cantidad={cantidad} handleRestar={handleRestar} handleSumar={handleSumar}
-                    handleAgregar ={()=>{agregarAlCarrito(item,cantidad)}}/>
+                    {item.stock==0 ? <h2>El producto no tiene stock</h2> : ( <ItemCount cantidad={cantidad} handleRestar={handleRestar} handleSumar={handleSumar}
+                    handleAgregar ={()=>{
+                        agregarAlCarrito(item,cantidad)
+                    }}/>)}
+                    
                     
                 </div>
 
